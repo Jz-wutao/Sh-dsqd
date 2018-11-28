@@ -28,7 +28,7 @@ $(function () {
         series: [{
             name: '人数',
             type: 'bar', // bar 柱状图,  line 折线图   pie 饼图
-            data: [100, 60, 46, 55, 35, 21]
+            data: [87, 60, 46, 55, 35, 21]
         }, {
             name: '销量',
             type: 'bar',
