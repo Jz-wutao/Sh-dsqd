@@ -34,8 +34,8 @@
                         <span>分类管理</span>
                     </a>
                     <!-- 用于切换展示的二级列表 -->
-                    <div class="child">
-                        <a href="first.html">一级分类</a>
+                    <div class="child" style="display: block">
+                        <a href="first.html" class="active">一级分类</a>
                         <a href="second.html">二级分类</a>
                     </div>
                 </li>
@@ -54,8 +54,12 @@
 
         <!-- 上面的 lt_topbar -->
         <div class="lt_topbar">
-            <a href="#" class="icon_left pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
-            <a href="#" class="icon_right pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
+            <a href="#" class="icon_left pull-left">
+                <i class="glyphicon glyphicon-align-justify"></i>
+            </a>
+            <a href="#" class="icon_right pull-right">
+                <i class="glyphicon glyphicon-log-out"></i>
+            </a>
         </div>
 
         <!-- 底下一个流式布局容器 container-fluid  特点: 默认宽度100%, 有左右的15px padding -->
@@ -71,11 +75,6 @@
             -->
             <!-- <button data-toggle="modal" data-target="#logoutModal">我是按钮</button>-->
 
-            <!-- 准备两个具备宽高的容器 -->
-            <div class="lt_content">
-                <div class="echarts_left pull-left"></div>
-                <div class="echarts_right pull-right"></div>
-            </div>
         </div>
     </div>
 
@@ -112,11 +111,9 @@
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="js/common.js"></script>
     <script src="js/isLogin.js"></script>
-    <script src="js/index.js"></script>
 </body>
 
 </html>
