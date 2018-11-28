@@ -23,7 +23,7 @@
         <div class="nav">
             <ul>
                 <li>
-                    <a href="user.html">
+                    <a href="user.html" class="active">
                         <i class="glyphicon glyphicon-user"></i>
                         <span>用户管理</span>
                     </a>
@@ -39,47 +39,17 @@
                         <a href="second.html">二级分类</a>
                     </div>
                 </li>
-                <li>
-                    <a href="product.html">
-                        <i class="glyphicon glyphicon-tags"></i>
-                        <span>商品管理</span>
-                    </a>
-                </li>
+                <li><a href="product.html">
+                    <i class="glyphicon glyphicon-tags"></i>
+                    <span>商品管理</span>
+                </a>
+            </li>
             </ul>
         </div>
     </div>
 
     <!-- 右侧主体部分 -->
     <div class="lt_main">
-<<<<<<< HEAD
-        <!-- 上面的 lt_topbar -->
-        <div class="lt_topbar">
-            <a href="#" class="icon_left pull-left">
-                <i class="glyphicon glyphicon-align-justify"></i>
-            </a>
-            <a href="#" class="icon_right pull-right">
-                <i class="glyphicon glyphicon-log-out"></i>
-            </a>
-        </div>
-
-        <!-- 底下一个流式布局容器 container-fluid -->
-        <!-- 特点：默认宽度100%,有左右的15px padding -->
-        <div class="container-fluid">
-            <!-- 面包屑导航 -->
-            <ol class="breadcrumb mt_20">
-                <li>
-                    <a href="index.html">管理系统</a>
-                </li>
-                <li class="active">首页</li>
-            </ol>
-            <!-- data-toggle="modal"         标记用于切换模态框
-                 data-target="#logoutModal"  通过id关联具体显示哪一个模态框
-            -->
-
-            <!--
-                <button data-toggle="modal" data-target="#logoutModal">我是按钮</button>
-            -->
-=======
 
         <!-- 上面的 lt_topbar -->
         <div class="lt_topbar">
@@ -95,29 +65,35 @@
                 <li><a href="index.html">管理系统</a></li>
                 <li class="active">首页</li>
             </ol>
-            <!-- data-toggle="modal"         标记用于切换模态框
-               data-target="#logoutModal"  通过id关联具体显示哪一个模态框
+            <!-- 表格 -->
+            <!-- 
+                table 基本样式
+                table-bordered 添加边框
+                table-hover 添加鼠标悬停效果
             -->
-            <!-- <button data-toggle="modal" data-target="#logoutModal">我是按钮</button>-->
->>>>>>> index
-
-            <!-- 准备两个具备宽高的容器 -->
-            <div class="lt_content">
-                <div class="echarts_left pull-left"></div>
-                <div class="echarts_right pull-right"></div>
-            </div>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>用户名</th>
+                        <th>手机号</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>itcast</td>
+                        <td>15757771111</td>
+                        <td>正常</td>
+                        <td><button class="btn btn-danger">禁用</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-<<<<<<< HEAD
-    <!-- 退出模态框 -->
-    <!--
-     1. 模态框大小
-        大 modal-lg
-        中 默认
-        小 modal-sm
-     2. 给标签添加 data-dismiss="modal"  关闭模态框
-=======
 
     <!-- 退出模态框 -->
     <!--
@@ -126,7 +102,6 @@
             中 默认
             小 modal-sm
         2. 给标签添加 data-dismiss="modal"  关闭模态框
->>>>>>> index
     -->
 
     <!-- 外层是遮罩层 -->
@@ -152,11 +127,9 @@
     <script src="./lib/jquery/jquery.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.js"></script>
     <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
-    <script src="./lib/echarts/echarts.min.js"></script>
     <script src="./lib/nprogress/nprogress.js"></script>
     <script src="js/common.js"></script>
     <script src="js/isLogin.js"></script>
-    <script src="js/index.js"></script>
 </body>
 
 </html>
