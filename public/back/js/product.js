@@ -71,7 +71,7 @@ $(function () {
         $('#form').data("bootstrapValidator").updateStatus("brandId", "VALID");
     });
 
-    // 4. 配置文件上传插件
+    // 4. 配置文件上传插件;
     $('#fileupload').fileupload({
         // 返回回来的数据类型
         dataType: "json",
