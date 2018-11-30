@@ -141,11 +141,7 @@ ul {
 }
 
 .lt_topbar.hidemenu {
-<<<<<<< HEAD
-    padding-left: 0;
-=======
     padding-left: 0px;
->>>>>>> index
 }
 
 .lt_topbar .icon_left,
@@ -158,10 +154,6 @@ ul {
     font-size: 20px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> index
 .lt_main {
     height: 2000px;
     padding-left: 180px;
@@ -172,12 +164,7 @@ ul {
 .lt_main.hidemenu {
     padding-left: 0px;
 }
-<<<<<<< HEAD
   
-=======
-
-
->>>>>>> index
 .echarts_left,
 .echarts_right {
     width: 48%;
