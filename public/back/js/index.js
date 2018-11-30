@@ -1,10 +1,7 @@
-/*
-Created by wt on 2018/11/27.
-*/
 $(function () {
-    // 1.柱状图
-    // 基于准备好的dom,初始化echarts实例
-    var echarts_left = echarts.init(document.querySelector('.echarts_left'));
+    // 1. 柱状图
+    // 基于准备好的dom，初始化echarts实例
+    var echarts_left = echarts.init(document.querySelector(".echarts_left"));
 
     // 指定图表的配置项和数据
     var option1 = {
@@ -23,24 +20,24 @@ $(function () {
         xAxis: {
             data: ["1月", "2月", "3月", "4月", "5月", "6月"]
         },
-        // y轴,y轴的数据刻度,需要通过数据的值,动态生成
+        // y轴, y轴的数据刻度, 需要通过数据的值, 动态生成
         yAxis: {},
         series: [{
             name: '人数',
             type: 'bar', // bar 柱状图,  line 折线图   pie 饼图
-            data: [88, 60, 46, 55, 35, 21]
+            data: [100, 60, 46, 40, 10, 20]
         }, {
             name: '销量',
             type: 'bar',
-            data: [32, 44, 21, 6, 51, 27]
+            data: [50, 20, 66, 10, 10, 20]
         }]
     };
 
-    // 使用刚指定的配置项和数据显示图表
+    // 使用刚指定的配置项和数据显示图表。
     echarts_left.setOption(option1);
 
-    // 2.饼图
-    // 基于准备好的dom,初始化echarts实例
+    // 2. 饼图
+    // 基于准备好的dom，初始化echarts实例
     var echarts_right = echarts.init(document.querySelector(".echarts_right"));
 
     // 指定图表的配置项和数据
