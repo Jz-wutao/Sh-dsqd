@@ -89,6 +89,14 @@ img {
     color: #fff;
 }
 
+.lt_footer li a.current {
+    color: orange;
+}
+
+.lt_footer li a.current p {
+    color: orange;
+}
+
 .lt_footer li a p {
     color: #fff;
     margin: 0;
@@ -99,6 +107,28 @@ img {
     height: 100%;
     background-color: #fff;
     position: relative;
+}
+
+/* 公共的搜索框样式 */
+.lt_search {
+    padding: 10px;
+    position: relative;
+}
+
+.lt_search .search_input {
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    border: 1px solid #007AFF;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.lt_search .search_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 0 5px 5px 0;
 }
 
 /* 产品公共区域 */
@@ -123,10 +153,10 @@ img {
     padding: 10px;
 }
 
-.lt_product li .price {
+.lt_product li a .price {
     color: red;
 }
 
-.lt_product li .oldprice {
+.lt_product li a .oldPrice {
     text-decoration: line-through;
 }
